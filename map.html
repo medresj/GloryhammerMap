@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html charset="UTF-8">
+<head>
+<title>Gloryhammer Map</title>
+<link rel="stylesheet" href="leaflet.js/leaflet/dist/leaflet.css" />
+<script src="leaflet.js/leaflet/dist/leaflet.js"></script>
+<script>
+
+</script>
+<style>
+ #map {height: 720px; width: 1300px;}
+</style>
+</head>
+<body>
+
+     <div id="map"></div>
+        <script>
+            var map = L.map('map').setView([56.4605938, -2.9701900], 13);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            var Dundee = L.marker([56.4605938, -2.9701900]).addTo(map);
+            var Crail = L.marker([56.2598, -2.6257]).addTo(map);
+            var Aberdeen = L.marker([57.1452, -2.0984]).addTo(map);
+            var Auchtermuchty = L.marker([56.2920848, -3.2328277]).addTo(map);
+            var Inverness = L.marker([57.4790124, -4.2257390]).addTo(map);
+
+            Dundee.bindPopup("Dundee")
+            Crail.bindPopup("Crail")
+            Aberdeen.bindPopup("Aberdeen")
+            Auchtermuchty.bindPopup("Auchtermuchty")
+            Inverness.bindPopup("Inverness")
+
+        </script>
+
+</body>
+</html>

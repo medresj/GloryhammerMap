@@ -1,0 +1,14 @@
+
+Map + Lore for Gloryhammer Universe like LoL website
+
+Map: Locations, Info
+
+Characters: Name, Role, Info
+
+Dundee:  56.4605938, -2.9701900
+
+Aberdeen: 57.1452, -2.0984
+Crail: 56.2598, -2.6257
+Auchtermuchty: 56.2920848, -3.2328277
+Inverness: 57.4790124, -4.2257390
+
